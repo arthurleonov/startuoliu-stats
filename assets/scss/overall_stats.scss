@@ -1,3 +1,24 @@
+
+.overall_stats {
+    margin: 35px 0px 45px 0px;
+    .left-filter {
+
+        h2 {
+            font-size: 18px;
+        }
+        .dropdown-toggle {
+            border: 1px solid #c9cdd0;
+            border-radius: 6px;
+            font-size: 14px;
+            &:hover {
+                background: #f2f2f3;
+            }
+        }
+        .dropdown-item {
+            font-size: 14px;
+        }
+    }
+}
 .overall_stats {
    
     img {

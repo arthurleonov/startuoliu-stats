@@ -10698,6 +10698,28 @@ body {
   border-top: 1px solid #eceff1;
 }
 
+.overall_stats {
+  margin: 35px 0px 45px 0px;
+}
+
+.overall_stats .left-filter h2 {
+  font-size: 18px;
+}
+
+.overall_stats .left-filter .dropdown-toggle {
+  border: 1px solid #c9cdd0;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.overall_stats .left-filter .dropdown-toggle:hover {
+  background: #f2f2f3;
+}
+
+.overall_stats .left-filter .dropdown-item {
+  font-size: 14px;
+}
+
 .overall_stats img {
   position: relative;
   width: 80px;
