@@ -10699,6 +10699,14 @@ body {
   border-top: 1px solid #eceff1;
 }
 
+.table-hover tbody tr:hover {
+  background: #f3f3f3;
+}
+
+.table-hover tbody td {
+  border-right: 1px solid #eceff1;
+}
+
 .overall_stats {
   margin: 35px 0px 46px 15px;
 }
