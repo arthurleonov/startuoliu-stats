@@ -10673,6 +10673,7 @@ body {
 .table td {
   font-size: 14px;
   color: #485763;
+  border-right: 1px solid #eceff1;
 }
 
 .table td.green {
