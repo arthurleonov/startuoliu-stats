@@ -10,6 +10,26 @@
 
 .navbar {
     .search-container {
-        width: 70%%;
+        width: 70%;
+        position:relative;
+        padding:0 0 0 20px;
+        margin:0 50px;
+        #input {
+            margin:0;
+            padding-right: 30px;
+            width: 100%;
+            padding-left: 35px;
+        }
+        #input_img {
+            position:absolute;
+            bottom:2px;
+            left: 15px;
+            width: 17px;
+            height: 27px;
+            .feather {
+                color: #a9b2b9;
+            }
+        }
     }
 }
+

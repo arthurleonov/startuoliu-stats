@@ -10581,7 +10581,29 @@ body {
 }
 
 .navbar .search-container {
+  width: 70%;
+  position: relative;
+  padding: 0 0 0 20px;
+  margin: 0 50px;
+}
+
+.navbar .search-container #input {
+  margin: 0;
+  padding-right: 30px;
   width: 100%;
+  padding-left: 35px;
+}
+
+.navbar .search-container #input_img {
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+  width: 17px;
+  height: 27px;
+}
+
+.navbar .search-container #input_img .feather {
+  color: #a9b2b9;
 }
 
 .form-control {
@@ -10676,11 +10698,6 @@ body {
   border-top: 1px solid #eceff1;
 }
 
-.overall_stats {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-
 .overall_stats img {
   position: relative;
   width: 80px;
@@ -10745,7 +10762,6 @@ body {
   border-width: 0;
   padding: 25px 11px;
   border-radius: .25rem;
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(0, 0, 0, 0.015);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(0, 0, 0, 0.015);
+  color: red;
   margin-bottom: 1.5rem;
 }
