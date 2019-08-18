@@ -1,0 +1,58 @@
+.overall_stats {
+   
+    img {
+        position: relative;
+        width: 80px;
+        height: 60px;
+    }
+    .explanation {
+        color: #647787;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    h2 {
+        font-size: 32px;
+        ///////
+    }
+    .bottom-details {
+        border-top: 1px solid $border;
+        padding-top: 5px;
+        margin-top: 5px;
+        p {
+            color: #647787;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        .green {
+                    color: $green;
+                    font-weight: 600;
+                    .feather {
+                        color: $green;
+                        width: 19px;
+                        height: 19px;
+                        position: relative;
+                        top: -2px;
+                    
+                    }
+                }
+                .red {
+                    color: $red;
+                    font-weight: 600;
+                    .feather {
+                        color: $red;
+                        width: 19px;
+                        height: 19px;
+                        position: relative;
+                        top: -2px;
+                    
+                    }
+                }
+    }
+}
+
+.overall_stats {
+    h5 {
+        font-size: 16px;
+        padding-left: 12px;
+    }
+}

@@ -1,0 +1,32 @@
+// General Style
+h1, h2, h3, h4, h5, p, li, a, span {
+    font-family: 'Lato', sans-serif;
+    color: $black;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: bold;
+}
+
+
+body {
+    background: $bg-grey;
+}
+.btn {
+    border: 0px;
+    border-radius: 0px;
+}
+.btn-line {
+    border-bottom: 1px solid $border;
+}
+
+// .top-card {
+//     background: #fff;
+//     padding: 30px 0px;
+//     transition: .5s;
+//     border: 0;
+//     border-radius: .55rem;
+//     position: relative;
+//     width: 100%;
+//     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.1)
+// }

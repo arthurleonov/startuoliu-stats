@@ -1,0 +1,14 @@
+.overall_stats .explanation {
+  color: #9e9e9e;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.overall_stats h2 {
+  font-size: 32px;
+}
+
+.overall_stats .bottom-details p {
+  color: #647787;
+  font-size: 14px;
+}

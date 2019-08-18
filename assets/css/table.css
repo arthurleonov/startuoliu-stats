@@ -1,0 +1,28 @@
+.table {
+  background-color: white;
+  border: 1px solid #DBE3E3;
+}
+
+.table thead {
+  background: #FAFBFC;
+}
+
+.table thead th {
+  font-size: 11px;
+  color: #777B7B;
+  border-bottom: 1px solid #DBE3E3;
+  letter-spacing: 0.92px;
+}
+
+.table thead .border-right {
+  border-right: 1px solid #DBE3E3;
+}
+
+.table .name {
+  font-size: 14px;
+  color: #777B7B;
+}
+
+.table td {
+  font-size: 14px;
+}

@@ -1,0 +1,60 @@
+.table {
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,.05), 0 -1px 0 rgba(0,0,0,.015);
+    border-radius: .55rem;
+    border: 1px solid $border;
+    thead {
+        background: #FAFBFC;
+        border-radius: .55rem;
+            th {
+                font-size: 11px;
+                color: #777B7B;
+                border-radius: .55rem;
+                border-bottom: 1px solid  $border;
+                letter-spacing: 0.92px;
+                border-top: 0;
+            }
+            .border-right {
+                    border-right: 2px solid $border;
+            }
+            .feather {
+                height: 15px;
+                width: 15px;
+            }
+        }
+
+}
+
+.table {
+    .name {
+        font-size: 14px;
+        color: $black;
+    }
+    td {
+        font-size: 14px;
+        color: $black;
+        &.green {
+            color: $green;
+            .feather {
+                color: $green;
+                max-width: 18px;
+
+            }
+        }
+        &.red {
+            color: $red;
+            .feather {
+                color: $red;
+                max-width: 18px;
+
+            }
+
+        }
+    }
+}
+
+.table {
+    th, td {
+        border-top: 1px solid $border;
+    }
+}
