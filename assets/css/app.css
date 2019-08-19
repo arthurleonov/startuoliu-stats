@@ -10561,15 +10561,6 @@ body {
   background: #f7f8fa;
 }
 
-.btn {
-  border: 0px;
-  border-radius: 0px;
-}
-
-.btn-line {
-  border-bottom: 1px solid #eceff1;
-}
-
 .navbar {
   background-color: white;
   -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(0, 0, 0, 0.015);
@@ -10585,6 +10576,15 @@ body {
   position: relative;
   padding: 0 0 0 20px;
   margin: 0 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar .search-container {
+    width: 100%;
+    padding: 0;
+    margin: 0px;
+    background: white;
+  }
 }
 
 .navbar .search-container #input {
@@ -10606,6 +10606,12 @@ body {
   color: #a9b2b9;
 }
 
+@media screen and (max-width: 768px) {
+  .navbar .search-container #input_img {
+    left: 6px;
+  }
+}
+
 .form-control {
   font-size: 14px;
   color: #777B7B;
@@ -10615,23 +10621,6 @@ body {
   margin: 0;
   outline: none;
   height: inherit;
-}
-
-.jumbotron {
-  background: #fff;
-  padding: 3rem 3rem;
-}
-
-.jumbotron img {
-  max-width: 200px;
-}
-
-.jumbotron h1 {
-  font-size: 29px;
-}
-
-.jumbotron .lead {
-  font-size: 16px;
 }
 
 .table {
@@ -10670,10 +10659,22 @@ body {
   color: #485763;
 }
 
+@media screen and (max-width: 768px) {
+  .table .name {
+    font-size: 12px;
+  }
+}
+
 .table td {
   font-size: 14px;
   color: #485763;
   border-right: 1px solid #eceff1;
+}
+
+@media screen and (max-width: 768px) {
+  .table td {
+    font-size: 12px;
+  }
 }
 
 .table td.green {
@@ -10685,6 +10686,12 @@ body {
   max-width: 18px;
 }
 
+@media screen and (max-width: 768px) {
+  .table td.green .feather {
+    display: none;
+  }
+}
+
 .table td.red {
   color: #e3342f;
 }
@@ -10692,6 +10699,12 @@ body {
 .table td.red .feather {
   color: #e3342f;
   max-width: 18px;
+}
+
+@media screen and (max-width: 768px) {
+  .table td.red .feather {
+    display: none;
+  }
 }
 
 .table th,
@@ -10709,6 +10722,12 @@ body {
 
 .overall_stats {
   margin: 35px 0px 46px 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .overall_stats {
+    margin: 35px 0px 46px 0px;
+  }
 }
 
 .overall_stats .left-filter h2 {

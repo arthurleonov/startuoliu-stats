@@ -29,16 +29,25 @@
     .name {
         font-size: 14px;
         color: $black;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
     }
     td {
         font-size: 14px;
         color: $black;
         border-right: 1px solid #eceff1;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
         &.green {
             color: $green;
             .feather {
                 color: $green;
                 max-width: 18px;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
 
             }
         }
@@ -47,6 +56,9 @@
             .feather {
                 color: $red;
                 max-width: 18px;
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
 
             }
 
