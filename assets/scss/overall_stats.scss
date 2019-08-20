@@ -1,84 +1,113 @@
-
+/* === Top title and dropdown === */
 .overall_stats {
-    margin: 35px 0px 46px 15px;
-    @media screen and (max-width:768px) {
-        margin: 35px 0px 46px 0px;
-    }
-    .left-filter {
 
-       
+    margin: 35px 0px 46px 15px;
+
+    @media screen and (max-width:768px) {
+        margin: 35px 0px 0px 0px;
+    }
+
+    .top-filter {
 
         h2 {
             font-size: 16px;
         }
+
         .dropdown-toggle {
             border: 1px solid #c9cdd0;
             border-radius: 6px;
             font-size: 14px;
+
             &:hover {
                 background: #f2f2f3;
             }
         }
+
         .dropdown-item {
             font-size: 14px;
         }
     }
 }
+
+/* === 4 number columns === */
+
 .overall_stats {
-   
-    img {
-        position: relative;
-        width: 80px;
-        height: 60px;
-    }
-    .explanation {
-        color: #647787;
-        font-size: 14px;
-        margin-bottom: 0;
-    }
-    h2 {
-        font-size: 32px;
-        ///////
-    }
-    .bottom-details {
-        border-top: 1px solid $border;
-        padding-top: 5px;
-        margin-top: 5px;
-        p {
+
+    .number-item {
+
+        border-right: 1px solid $border;
+        &:last-of-type {
+            border-right: 0;
+        }
+        @media screen and (max-width: 768px) {
+            border-right: 0;
+            border-bottom: 1px solid $border;
+            padding-bottom: 30px;
+            &:last-of-type {
+                border-bottom: 0;
+                padding-top: 30px;
+            }
+
+        }
+
+
+        h2 {
+            font-size: 32px;
+        }
+
+        img {
+            position: relative;
+            width: 80px;
+            height: 60px;
+        }
+
+        .explanation {
             color: #647787;
             font-size: 14px;
             margin-bottom: 0;
         }
-        .green {
-                    color: $green;
-                    font-weight: 600;
-                    .feather {
-                        color: $green;
-                        width: 19px;
-                        height: 19px;
-                        position: relative;
-                        top: -2px;
-                    
-                    }
-                }
-                .red {
-                    color: $red;
-                    font-weight: 600;
-                    .feather {
-                        color: $red;
-                        width: 19px;
-                        height: 19px;
-                        position: relative;
-                        top: -2px;
-                    
-                    }
-                }
-    }
-}
 
-.overall_stats {
-    h5 {
-        font-size: 16px;
-        padding-left: 12px;
+
+        .bottom-details {
+            border-top: 1px solid $border;
+            padding-top: 5px;
+            margin-top: 5px;
+
+            p {
+                color: #647787;
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+
+            .green {
+                color: $green;
+                font-weight: 600;
+
+                .feather {
+                    color: $green;
+                    width: 19px;
+                    height: 19px;
+                    position: relative;
+                    top: -2px;
+
+                }
+            }
+
+            .red {
+                color: $red;
+                font-weight: 600;
+
+                .feather {
+                    color: $red;
+                    width: 19px;
+                    height: 19px;
+                    position: relative;
+                    top: -2px;
+
+                }
+            }
+        }
+
     }
+
 }

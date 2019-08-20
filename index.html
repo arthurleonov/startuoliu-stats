@@ -20,52 +20,94 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" /></a>
-    
-
-        <div class="search-container">
-
-            <input class="form-control" id="input" type="text" placeholder="Ieškoti įmonės">
-            <span id="input_img"><i id="input_img" data-feather="search"></i></span>
-
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav mt-2 mt-lg-0">
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-
-        <div class="overall_stats pl-md-5">
-
-                <div class="row">
-                        <div class="col">
-                                <div class="left-filter pl-2 mb-3">
-                                    <h2 class="d-inline-block">Rodyti pagal periodą:</h2>
-                                    <div class="dropdown d-inline-block pl-1">
-                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-                                            aria-haspopup="true" aria-expanded="false">
-                                            2019 Q1
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="#">Action</a>
-                                            <a class="dropdown-item" href="#">Another action</a>
-                                            <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <nav class="navbar navbar-default" role="navigation">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" /></a>
+                  
                 </div>
-        
-                <div class="row align-items-center">
-                    <div class="col-md-4 border-right mb-4 mb-md-0">
+               
+                <div class="search-container mb-2 mt-2 mb-md-0 mt-md-0 order-md-2 order-3">
+
+                        <input class="form-control" id="input" type="text" placeholder="Ieškoti įmonės">
+                        <span id="input_img"><i id="input_img" data-feather="search"></i></span>
+            
+                    </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <a href="/apie-projekta" class="order-md-3 order-2">Apie projektą</a>
+            </nav>
+    
+    <div class="container-fluid">
+
+        <div class="overall_stats">
+
+            <div class="row">
+                <div class="col">
+                    <div class="top-filter mb-3">
+                        <h2 class="d-inline-block">Rodyti pagal periodą:</h2>
+                        <div class="dropdown d-inline-block pl-1">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                2019 Q1
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">2019 Q2</a>
+                                <a class="dropdown-item" href="#">2019 Q3</a>
+                                <a class="dropdown-item" href="#">2019 Q4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-3 number-item mb-4 mb-md-0">
+                    <div class=" d-flex align-items-center">
+                        <img src="./assets/img/performance.svg" style="max-width: 80px;" class="img-fluid"
+                            alt="Responsive image">
+                        <div class="mx-3">
+                            <p class="explanation">Mokesciai</p>
+                            <h2 class="mb-0">19.8M</h2>
+                            <div class="bottom-details">
+                                <p class="cash d-inline-block">€19 838 865</p>
+                                <p class="red d-inline-block"><i data-feather="arrow-down"></i>-5%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 number-item mb-4 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/success.svg" style="max-width: 80px;" class="img-fluid"
+                            alt="Responsive image">
+                        <div class="mx-3 text-left">
+                            <p class="explanation">Algos</p>
+                            <h2 class="mb-0">177.1M</h2>
+                            <div class="bottom-details">
+                                <p class="cash d-inline-block">€177 149 931</p>
+                                <p class="green d-inline-block"><i data-feather="arrow-up"></i>+18%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 number-item">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/talent.svg" style="max-width: 80px;" class="img-fluid"
+                            alt="Responsive image">
+                        <div class="mx-3">
+                            <p class="explanation">Darbuotojai</p>
+                            <h2 class="mb-0">5.3K</h2>
+                            <div class="bottom-details">
+                                <p class="cash d-inline-block">5 306</p>
+                                <p class="green d-inline-block"><i data-feather="arrow-up"></i>+300%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 number-item mb-md-0">
                         <div class="d-flex align-items-center">
                             <img src="./assets/img/growth.svg" style="max-width: 80px;" class="img-fluid"
                                 alt="Responsive image">
                             <div class="mx-3 text-left">
-                                <p class="explanation">Pelnas</p>
+                                <p class="explanation">Apyvarta</p>
                                 <h2 class="mb-0">177.1M</h2>
                                 <div class="bottom-details">
                                     <p class="cash d-inline-block">€177 149 931</p>
@@ -74,39 +116,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 border-right mb-4 mb-md-0">
-                        <div class=" d-flex align-items-center">
-                            <img src="./assets/img/performance.svg" style="max-width: 80px;" class="img-fluid"
-                                alt="Responsive image">
-                            <div class="mx-3">
-                                <p class="explanation">Mokesciai</p>
-                                <h2 class="mb-0">19.8M</h2>
-                                <div class="bottom-details">
-                                    <p class="cash d-inline-block">€19 838 865</p>
-                                    <p class="red d-inline-block"><i data-feather="arrow-down"></i>-5%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="d-flex align-items-center">
-                            <img src="./assets/img/talent.svg" style="max-width: 80px;" class="img-fluid"
-                                alt="Responsive image">
-                            <div class="mx-3">
-                                <p class="explanation">Darbuotojai</p>
-                                <h2 class="mb-0">5.3K</h2>
-                                <div class="bottom-details">
-                                    <p class="cash d-inline-block">5 306</p>
-                                    <p class="green d-inline-block"><i data-feather="arrow-up"></i>+300%</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
+            </div>
 
         </div>
 
-    
+
 
     </div>
 
@@ -118,27 +133,25 @@
                     <table class="table table-hover ">
                         <thead>
                             <tr>
-                                <th scope="col start" class="border-right">Startuolio pavad.</th>
-                                <th scope="col">Q1 Pelnas</th>
-                                <th scope="col">QoQ</th>
-                                <th scope="col">YoY</th>
-                                <th scope="col">Alg.</th>
-                                <th scope="col" class="border-right">Peln.</th>
-
-
-                                <th scope="col">Q1 Mokesciai</th>
+                                <th scope="col start" class="border-right">Pavadinimas</th>
+                                <th scope="col">Mokesčiai</th>
                                 <th scope="col">QoQ <i data-feather="help-circle"></i></th>
-                                <th scope="col">YoY</th>
-                                <th scope="col">Alg.</th>
-                                <th scope="col" class="border-right">Peln.</th>
+                                <th scope="col" class="border-right">YoY</th>
 
 
-                                <th scope="col">Q1 Darbuotojai</th>
-                                <th scope="col">QoQ</th>
-                                <th scope="col">YoY</th>
-                                <th scope="col">Alg.</th>
-                                <th class="border-right"> Peln.</th>
 
+                                <th scope="col">Darb. algos</th>
+                                <th scope="col">QoQ <i data-feather="help-circle"></i></th>
+                                <th scope="col" class="border-right">YoY</th>
+
+
+                                <th scope="col">Darbuotojai</th>
+                                <th scope="col">QoQ <i data-feather="help-circle"></i></th>
+                                <th scope="col" class="border-right">YoY</th>
+
+                                <th scope="col">Apyvarta</th>
+                                <th scope="col">QoQ <i data-feather="help-circle"></i></th>
+                                <th scope="col" class="border-right">YoY</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -148,8 +161,6 @@
                                 <td>64 100</td>
                                 <td class="green"><i data-feather="arrow-up"></i>+150%</td>
                                 <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
 
 
                                 <td>64 100</td>
@@ -163,180 +174,9 @@
                                 <td class="green"><i data-feather="arrow-up"></i>+150%</td>
                                 <td class="red"><i data-feather="arrow-down"></i>+70%</td>
                                 <td>2000</td>
-                                <td>64 100</td> </tr> <tr>
-
-                                    <th scope="row" class="name border-right">Trafi</th>
-                                    <td>64 100</td>
-                                    <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                    <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                    <td>2000</td>
-                                    <td class="border-right">64 100</td>
-
-
-                                    <td>64 100</td>
-                                    <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                    <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                    <td>2000</td>
-                                    <td class="border-right">64 100</td>
-
-
-                                    <td>64 100</td>
-                                    <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                    <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                    <td>2000</td>
-                                    <td>64 100</td>
-
+                               
                             </tr>
-
-                            <tr>
-
-                                <th scope="row" class="name border-right">Vinted</th>
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td>64 100</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <th scope="row" class="name border-right">Vinted</th>
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td>64 100</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <th scope="row" class="name border-right">Vinted</th>
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td>64 100</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <th scope="row" class="name border-right">Vinted</th>
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td>64 100</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <th scope="row" class="name border-right">Vinted</th>
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td>64 100</td>
-
-                            </tr>
-
-                            <tr>
-
-                                <th scope="row" class="name border-right">Vinted</th>
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td class="border-right">64 100</td>
-
-
-                                <td>64 100</td>
-                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
-                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
-                                <td>2000</td>
-                                <td>64 100</td>
-
-                            </tr>
+                            
 
                         </tbody>
                     </table>
