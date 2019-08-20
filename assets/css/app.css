@@ -10569,10 +10569,18 @@ body {
 }
 
 .navbar .navbar-brand img {
-  max-width: 170px;
+  height: 35px;
 }
 
-.navbar a {
+.navbar .navbar-brand span {
+  vertical-align: middle;
+  padding-left: 7px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1b2b62;
+}
+
+.navbar .navbar-brand .link {
   font-size: 14px;
 }
 
@@ -10841,4 +10849,9 @@ body {
 
 .tooltip {
   pointer-events: none;
+}
+
+footer {
+  font-size: 14px;
+  color: #485763;
 }
