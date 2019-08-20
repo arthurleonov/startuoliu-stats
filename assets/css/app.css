@@ -10838,3 +10838,7 @@ body {
   color: red;
   margin-bottom: 1.5rem;
 }
+
+.tooltip {
+  pointer-events: none;
+}
