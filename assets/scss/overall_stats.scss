@@ -36,6 +36,7 @@
     .number-item {
 
         border-right: 1px solid $border;
+        
         &:last-of-type {
             border-right: 0;
         }

@@ -1,61 +1,674 @@
 <!doctype html>
 <html lang="en">
+
 <head>
+
+    <title>Startuolių statistika</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
-
-    <title>Bootstrap Stater</title>
-
+    <meta name="description" content="Page description. No longer than 155 characters." />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@publisher_handle">
+    <meta name="twitter:title" content="Page Title">
+    <meta name="twitter:description" content="Page description less than 200 characters">
+    <meta name="twitter:creator" content="@author_handle">
+    <meta name="twitter:image" content="http://www.example.com/image.jpg">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Title Here" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.example.com/" />
+    <meta property="og:image" content="http://example.com/image.jpg" />
+    <meta property="og:description" content="Description Here" /> 
+    <meta property="og:site_name" content="Site Name, i.e. Moz" />
+    <meta property="fb:admins" content="Facebook numeric ID" />
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <!-- Icons for this template -->
     <link href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/app.min.css">
+    
 </head>
 
 <body>
+    <nav class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand align-items-center" href="#"><img src="./assets/img/project.svg" /><span>Startuolių statistika</span></a>
 
-<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-        <form class="form-inline mt-2 mt-md-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search </button>
-        </form>
+        </div>
+
+        <div class="search-container align-items-center mb-2 mt-2 mb-md-0 mt-md-0 order-md-2 order-3">
+
+            <input class="form-control" id="input" type="text" placeholder="Ieškoti įmonės">
+            <span id="input_img"><i id="input_img" data-feather="search"></i></span>
+
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <a href="/apie-projekta" class="order-md-3 order-2 align-items-center link">Apie projektą</a>
+    </nav>
+
+    <div class="container-fluid">
+
+        <div class="overall_stats">
+
+            <div class="row">
+                <div class="col">
+                    <div class="top-filter mb-3">
+                        <h2 class="d-inline-block">Rodyti pagal periodą:</h2>
+                        <div class="dropdown d-inline-block pl-1">
+                            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                2019 Q1
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">2019 Q2</a>
+                                <a class="dropdown-item" href="#">2019 Q3</a>
+                                <a class="dropdown-item" href="#">2019 Q4</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-md-3 number-item mb-4 mb-md-0">
+                    <div class=" d-flex align-items-center">
+                        <img src="./assets/img/performance.svg" style="max-width: 80px;" class="img-fluid"
+                            alt="Responsive image">
+                        <div class="mx-3">
+                            <p class="explanation">Mokesciai</p>
+                            <h2 class="mb-0">19.8M</h2>
+                            <div class="bottom-details">
+                                <p class="cash d-inline-block">€19 838 865</p>
+                                <p class="red d-inline-block"><i data-feather="arrow-down"></i>-5%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 number-item mb-4 mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/success.svg" style="max-width: 80px;" class="img-fluid"
+                            alt="Responsive image">
+                        <div class="mx-3 text-left">
+                            <p class="explanation">Darbuotojų algos</p>
+                            <h2 class="mb-0">177.1M</h2>
+                            <div class="bottom-details">
+                                <p class="cash d-inline-block">€177 149 931</p>
+                                <p class="green d-inline-block"><i data-feather="arrow-up"></i>+18%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 number-item">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/talent.svg" style="max-width: 80px;" class="img-fluid"
+                            alt="Responsive image">
+                        <div class="mx-3">
+                            <p class="explanation">Darbuotojų skaičius</p>
+                            <h2 class="mb-0">5.3K</h2>
+                            <div class="bottom-details">
+                                <p class="cash d-inline-block">5 306</p>
+                                <p class="green d-inline-block"><i data-feather="arrow-up"></i>+300%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 number-item mb-md-0">
+                    <div class="d-flex align-items-center">
+                        <img src="./assets/img/growth.svg" style="max-width: 80px;" class="img-fluid"
+                            alt="Responsive image">
+                        <div class="mx-3 text-left">
+                            <p class="explanation">Apyvarta</p>
+                            <h2 class="mb-0">177.1M</h2>
+                            <div class="bottom-details">
+                                <p class="cash d-inline-block">€177 149 931</p>
+                                <p class="green d-inline-block"><i data-feather="arrow-up"></i>+18%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
     </div>
-</nav>
 
-<main role="main" class="container">
-    <div class="jumbotron text-center">
-        <img src="assets/img/logo.png"/>
-        <h1>Bootstrap 4 Starter Template</h1>
-        <p class="lead">This example is a quick bootstrap starter template.</p>
-        <a class="btn btn-lg btn-primary" href="https://getbootstrap.com/docs/4.3/getting-started/introduction/" role="button" target="_blank">View Bootstrap 4.1 Docs &raquo;</a>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <Div class="col-12">
+                <div class="table-responsive">
+                    <table class="table table-hover ">
+                        <thead>
+                            <tr>
+                                <th scope="col start" class="border-right">Pavadinimas</th>
+                                <th scope="col">Mokesčiai</th>
+                                <th scope="col">QoQ <i data-feather="help-circle" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales consectetur orci sed feugiat."></i>
+                                </th>
+                                <th scope="col" class="border-right">YoY</th>
+
+
+
+                                <th scope="col">Darb. algos</th>
+                                <th scope="col">QoQ <i data-feather="help-circle" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales consectetur orci sed feugiat."></i>
+                                </th>
+                                <th scope="col" class="border-right">YoY</th>
+
+
+                                <th scope="col">Darbuotojai</th>
+                                <th scope="col">QoQ <i data-feather="help-circle" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales consectetur orci sed feugiat."></i>
+                                </th>
+                                <th scope="col" class="border-right">YoY</th>
+
+                                <th scope="col">Apyvarta</th>
+                                <th scope="col">QoQ <i data-feather="help-circle" data-toggle="tooltip"
+                                        data-placement="top"
+                                        title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sodales consectetur orci sed feugiat."></i>
+                                </th>
+                                <th scope="col" class="border-right">YoY</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <th scope="row" class="name border-right">MailerLite</th>
+                                <td>13 489 772</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+56%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+
+                                <td>1 874 815</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+10%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>200</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-5%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Oberlo</th>
+                                <td>53 344 33</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+15%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+5%</td>
+
+
+                                <td>5 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>50</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+34%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+40%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Vinted</th>
+                                <td>104 232 54</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+440%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+
+
+                                <td>25 532 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>300</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+5%</td>
+
+                                <td>33 676 55</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">MailerLite</th>
+                                <td>13 489 772</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+56%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+
+                                <td>1 874 815</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+10%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>200</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-5%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Oberlo</th>
+                                <td>53 344 33</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+15%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+5%</td>
+
+
+                                <td>5 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>50</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+34%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+40%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Vinted</th>
+                                <td>104 232 54</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+440%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+
+
+                                <td>25 532 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>300</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+5%</td>
+
+                                <td>33 676 55</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">MailerLite</th>
+                                <td>13 489 772</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+56%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+
+                                <td>1 874 815</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+10%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>200</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-5%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Oberlo</th>
+                                <td>53 344 33</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+15%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+5%</td>
+
+
+                                <td>5 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>50</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+34%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+40%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Vinted</th>
+                                <td>104 232 54</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+440%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+
+
+                                <td>25 532 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>300</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+5%</td>
+
+                                <td>33 676 55</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">MailerLite</th>
+                                <td>13 489 772</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+56%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+
+                                <td>1 874 815</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+10%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>200</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-5%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Oberlo</th>
+                                <td>53 344 33</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+15%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+5%</td>
+
+
+                                <td>5 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>50</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+34%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+40%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Vinted</th>
+                                <td>104 232 54</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+440%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+
+
+                                <td>25 532 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>300</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+5%</td>
+
+                                <td>33 676 55</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">MailerLite</th>
+                                <td>13 489 772</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+56%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+
+                                <td>1 874 815</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+10%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>200</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-5%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Oberlo</th>
+                                <td>53 344 33</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+15%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+5%</td>
+
+
+                                <td>5 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>50</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+34%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+40%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Vinted</th>
+                                <td>104 232 54</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+440%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+
+
+                                <td>25 532 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>300</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+5%</td>
+
+                                <td>33 676 55</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">MailerLite</th>
+                                <td>13 489 772</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+56%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+
+                                <td>1 874 815</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+10%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>200</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-5%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Oberlo</th>
+                                <td>53 344 33</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+15%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+5%</td>
+
+
+                                <td>5 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>50</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+34%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+40%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Vinted</th>
+                                <td>104 232 54</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+440%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+
+
+                                <td>25 532 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>300</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+5%</td>
+
+                                <td>33 676 55</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">MailerLite</th>
+                                <td>13 489 772</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+56%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+
+                                <td>1 874 815</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+10%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>200</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-5%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+150%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Oberlo</th>
+                                <td>53 344 33</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+15%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+5%</td>
+
+
+                                <td>5 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>50</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+34%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+
+                                <td>34 534 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+40%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row" class="name border-right">Vinted</th>
+                                <td>104 232 54</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+440%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>-3%</td>
+
+
+                                <td>25 532 32</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+2%</td>
+
+
+                                <td>300</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+15%</td>
+                                <td class="green"><i data-feather="arrow-up">></i>+5%</td>
+
+                                <td>33 676 55</td>
+                                <td class="green"><i data-feather="arrow-up"></i>+20%</td>
+                                <td class="red"><i data-feather="arrow-down"></i>+70%</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
+            </Div>
+        </div>
     </div>
-</main>
 
-<!-- Bootstrap core JavaScript
+
+
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2019 ltstartups.lt. Sukurė <a target="_blank" href="https://enorkunas.lt">Eimantas Norkūnas.</a></a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- Bootstrap core JavaScript
 ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="assets/js/vendor/jquery.slim.min.js"></script>
-<script src="assets/js/vendor/popper.min.js"></script>
-<script src="assets/js/vendor/bootstrap.min.js"></script>
-<script src="assets/js/app.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/vendor/jquery.slim.min.js"></script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/app.min.js"></script>
+    <script>
+        feather.replace()
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
 </body>
+
 </html>

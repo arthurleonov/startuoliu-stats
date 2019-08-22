@@ -10561,6 +10561,11 @@ body {
   background: #f7f8fa;
 }
 
+.btn {
+  border: 0px;
+  border-radius: 0px;
+}
+
 /* === Branding === */
 .navbar {
   background-color: white;
@@ -10580,7 +10585,7 @@ body {
   color: #1b2b62;
 }
 
-.navbar .navbar-brand .link {
+.navbar .link {
   font-size: 14px;
 }
 
@@ -10841,10 +10846,21 @@ body {
 .card-container {
   background: #fff;
   border-width: 0;
-  padding: 25px 11px;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(0, 0, 0, 0.015);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 -1px 0 rgba(0, 0, 0, 0.015);
+  border-radius: .55rem;
+  border: 1px solid #eceff1;
   border-radius: .25rem;
   color: red;
   margin-bottom: 1.5rem;
+}
+
+.card-container.content {
+  padding: 50px 80px;
+}
+
+.card-container.content h1 {
+  font-size: 32px;
 }
 
 .tooltip {

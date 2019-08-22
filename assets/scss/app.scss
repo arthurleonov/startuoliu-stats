@@ -1,16 +1,16 @@
-// Custom bootstrap variable overrides
-@import "bootstrap_variable_overrides";
+
 
 // Bootstrap and its default variables
 @import "bootstrap/bootstrap";
 
-// Your style
+// Global styles
 @import "variables";
 @import "general";
 
+// Custom bootstrap variable overrides
+@import "bootstrap_variable_overrides";
 
-
-
+// Tempalte
 @import "nav";
 @import "forms";
 @import "table";
